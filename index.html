@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+
+		.container{
+			background-color: rgba(0,0,0,0.4);
+			width: 720px;
+			height: 400px;
+			bottom: 200px;
+		}
+		input:hover{
+			background-color: red;
+
+		}
+		input[value]
+		{
+			color: white;
+			font-size: 30px;
+		}
+		.form-control{
+			background-color: transparent;
+			display: inline;
+			height: 50px;
+			width: 120px;
+			margin-left: 30px;
+			margin-bottom: 20px;
+			margin-right: 8px;
+		}
+		div{
+			position: relative;
+			top:200px;
+			left: 10px;
+		}
+		img{
+			
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 100vh;
+			position: absolute;
+			filter: blur(15px);
+		}
+		input[name="answer"]
+		{
+			margin-bottom: 40px;
+			margin-top: 30px;
+			width: 600px;
+			height: 40px;
+		}
+		h1{
+			position: relative;	
+			top: 100px;
+			font-size: 70px;
+			color: green;	
+			text-align: center;
+			font-family: 'Henny Penny', cursive;
+		}	
+
+	</style>
+</head>
+<body>
+	<img src="a.jpg">
+
+	<h1><i class="fa fa-calculator" style="font-size:36px"></i>Calculator App</h1>
+	<div class="container">
+		
+		<form name="forms" class="form-group">
+			<input type="text" name="answer" class="form-control" value=" "><br>
+			<input type="button" name="one" value=" 1 " onclick="forms.answer.value+='1'" class="form-control">
+			<input type="button" name="one" value=" 2 " onclick="forms.answer.value+='2'" class="form-control">
+			<input type="button" name="one" value=" 3 " onclick="forms.answer.value+='3'" class="form-control">
+			<input type="button" name="one" value=" + " onclick="forms.answer.value+='+'" class="form-control"><br>
+			<input type="button" name="one" value=" 4 " onclick="forms.answer.value+='4'" class="form-control">
+			<input type="button" name="one" value=" 5 " onclick="forms.answer.value+='5'" class="form-control">
+			<input type="button" name="one" value=" 6 " onclick="forms.answer.value+='6'" class="form-control">
+			<input type="button" name="one" value=" - " onclick="forms.answer.value+='-'" class="form-control"><br>
+			<input type="button" name="one" value=" 7 " onclick="forms.answer.value+='7'" class="form-control">
+			<input type="button" name="one" value=" 8 " onclick="forms.answer.value+='8'" class="form-control">
+			<input type="button" name="one" value=" 9 " onclick="forms.answer.value+='9'" class="form-control">
+			<input type="button" name="one" value=" * " onclick="forms.answer.value+='*'" class="form-control"><br>
+			<input type="button" name="one" value=" / " onclick="forms.answer.value+='/'" class="form-control">
+			<input type="button" name="one" value=" = " onclick="forms.answer.value+='='+eval(forms.answer.value)" class="form-control">
+			<input type="button" name="one" value=" clear " onclick="forms.answer.value=' '" class="form-control">
+			<input type="button" name="one" value=" % " onclick="forms.answer.value+='%'" class="form-control">
+
+		</form>
+	</div>
+</body>
+</html>
